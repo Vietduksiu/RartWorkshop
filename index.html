@@ -15,10 +15,10 @@
         }
         header {
             background-color: #fff; /* Màu trắng */
-            padding: 20px 20px;
+            padding: 10px; /* Thu nhỏ chiều cao header */
             display: flex;
-            flex-direction: column; /* Sắp xếp theo cột */
             align-items: center;
+            justify-content: space-between;
             position: sticky;
             top: 0;
             z-index: 1000;
@@ -27,22 +27,23 @@
         header .logo-container {
             display: flex;
             align-items: center;
-            flex-direction: column; /* Sắp xếp theo cột */
+            flex: 1; /* Đẩy logo sang bên trái */
         }
         header img {
-            height: 100px; /* Tăng kích thước logo */
-            margin-bottom: 10px; /* Thêm khoảng cách bên dưới logo */
+            height: 50px; /* Thu nhỏ logo */
+            margin-right: 10px; /* Thêm khoảng cách giữa logo và text */
         }
         header nav {
             display: flex;
-            gap: 20px;
-            margin-top: 10px; /* Khoảng cách giữa logo và menu */
+            gap: 15px; /* Thu nhỏ khoảng cách giữa các liên kết */
+            flex: 2; /* Đẩy navigation sang bên phải */
+            justify-content: flex-end;
         }
         header nav a {
             color: #1E5631; /* Màu xanh lá cây đậm */
             text-decoration: none;
             font-weight: bold;
-            font-size: 18px;
+            font-size: 16px; /* Giảm kích thước chữ */
             transition: color 0.3s;
         }
         header nav a:hover {
@@ -117,7 +118,7 @@
         <a href="https://ibb.co/RDYwHYN">
             <img src="https://i.ibb.co/LZY7pYr/Trash-to-Art-1.png" alt="Trash-to-Art-1" border="0">
         </a>
-        <span style="color: #1E5631; font-size: 24px; font-weight: bold;">Rárt</span>
+        <span style="color: #1E5631; font-size: 18px; font-weight: bold;">Rárt</span>
     </div>
     <nav>
         <a href="#workshop">Đăng ký Workshop</a>
